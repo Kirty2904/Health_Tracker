@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-heartbeat"></i> Health Tracker
+                </a>
+                <div class="nav-links">
+                    <a href="#bmi-section">BMI Calculator</a>
+                    <a href="#water-section">Water Intake</a>
+                    <a href="#tips-section">Healthy Tips</a>
+                    <a href="#exercise-section">Exercise</a>
+                    <a href="#nutrition-section">Nutrition</a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Empower Your Health Journey</h1>
+                <p>Explore tools and tips to lead a healthier, happier life.</p>
+                <div class="cta-buttons">
+                    <a href="#bmi-section" class="primary-btn">Start Now</a>
+                    <a href="#about" class="secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="bmi-section">
+            <h2>BMI Calculator</h2>
+            <p>Calculate your Body Mass Index (BMI) and understand your health status.</p>
+            <form id="bmiForm">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="Enter your weight" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="Enter your height" required>
+
+                <button type="button" id="bmiButton">Calculate BMI</button>
+                <div class="result" id="bmiResult"></div>
+            </form>
+        </section>
+
+        <section id="water-section">
+            <h2>Water Intake Calculator</h2>
+            <p>Stay hydrated! Calculate your recommended daily water intake based on your weight and activity level.</p>
+            <form id="waterForm">
+                <label for="weightWater">Weight (kg):</label>
+                <input type="number" id="weightWater" placeholder="Enter your weight" required>
+
+                <label for="activity">Activity Level:</label>
+                <select id="activity">
+                    <option value="low">Low</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="high">High</option>
+                </select>
+
+                <button type="button" id="waterButton">Calculate Water Intake</button>
+                <div class="result" id="waterResult"></div>
+            </form>
+        </section>
+
+        <section id="tips-section">
+            <h2>Healthy Tips</h2>
+            <p>Discover daily tips for a healthier lifestyle:</p>
+            <div class="tip" id="healthTip"></div>
+        </section>
+
+        <section id="exercise-section">
+            <h2>Exercise Recommendations</h2>
+            <p>Personalized workout suggestions to suit your fitness level:</p>
+            <ul id="exerciseTips">
+                <li>Start with 30 minutes of walking daily.</li>
+                <li>Incorporate strength training twice a week.</li>
+                <li>Try yoga for flexibility and stress relief.</li>
+            </ul>
+        </section>
+
+        <section id="nutrition-section">
+            <h2>Nutritional Guidance</h2>
+            <p>Simple tips for a balanced diet:</p>
+            <ul>
+                <li>Eat a variety of fruits and vegetables.</li>
+                <li>Choose whole grains over refined grains.</li>
+                <li>Limit processed and sugary foods.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h5>ABOUT US</h5>
+                    <p>Health Tracker provides tools and resources for a healthier lifestyle.</p>
+                </div>
+                <div class="column">
+                    <h5>GROUP MEMBERS</h5>
+                    <ul>
+                        <li><a href="#">KASHISH JAIN</a></li>
+                        <li><a href="#">MANSHA</a></li>
+                        <li><a href="#">KIRTY SINGH</a></li>
+                        <li><a href="#">AYUSHI SAINI</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h5>CONTACT US</h5>
+                    <div class="gmail">
+                        <div><i class="fas fa-envelope"></i> kashishjain250705@gmail.com</div>
+                        <div><i class="fas fa-envelope"></i> manshaatreja57@gmail.com</div>
+                        <div><i class="fas fa-envelope"></i> kirty2904@gmail.com</div>
+                        <div><i class="fas fa-envelope"></i> ayushi.2327cs1101@kiet.edu</div>
+                    </div>
+                    <div class="icons">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fas fa-phone"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

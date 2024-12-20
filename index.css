@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+h2 {
+    color: #0078D7;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, #0056b3, #003f7f);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo i {
+    margin-right: 10px;
+    color: #ffcc00;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(13, 78, 124, 0.934), rgba(20, 19, 19, 0.5)), no-repeat center center/cover;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.primary-btn {
+    background-color: #ffcc00;
+    color: #003f7f;
+}
+
+.primary-btn:hover {
+    background-color: #e0b800;
+    transform: translateY(-5px);
+}
+
+.secondary-btn {
+    background-color: #fff;
+    color: #003f7f;
+    border: 1px solid #003f7f;
+}
+
+.secondary-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+}
+
+/* Main Content */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+label, input, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.result {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eef7ff;
+    border: 1px solid #b3daff;
+    border-radius: 5px;
+}
+
+
+
+/* Footer */
+/* Footer */
+/* Footer */
+.footer {
+    padding: 40px 20px;
+    background-color: #222; /* Ensure a uniform dark background */
+    color: white;
+    text-align: left;
+    border-top: 3px solid #0078D7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #0078D7; /* Highlight headers */
+}
+
+.footer p, .footer ul li a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    background: none; /* Remove background if inherited */
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer ul li a:hover {
+    color: lightgray;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.icons i {
+    color: white;
+    transition: color 0.3s;
+}
+
+.icons i:hover {
+    color: lightgray;
+}
+
+/* Adjust specific white areas inside the footer */
+.footer .gmail div {
+    background: none; /* Ensure no white background */
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer .gmail i {
+    margin-right: 10px;
+    color: #0078D7;
+}
+
+/* Fix for extra white space */
+.footer div {
+    background-color: transparent; /* Ensure transparent background */
+}
